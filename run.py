@@ -1,5 +1,6 @@
 from app import app, db
 from app.controllers import datos_controller as controller
+import subprocess # Necesitamos esto para ejecutar comandos externos
 
 with app.app_context():
     db.create_all()
@@ -13,6 +14,7 @@ with app.app_context():
         print("4. Eliminar dato")
         print("5. Traer datos desde API")
         print("6. Mostrar frecuencia de publicación por entidad")
+        print("7. Ejecutar Pruebas Unitarias") # Nueva opción
         print("0. Salir")
 
         opcion = input("Seleccione una opción: ")
@@ -47,6 +49,26 @@ with app.app_context():
             controller.importar_desde_api()
         elif opcion == '6':
             controller.mostrar_frecuencia_entidades()
+        elif opcion == '7': # Manejo de la nueva opción
+            print("\nEjecutando pruebas unitarias...")
+            try:
+                # Usa subprocess para ejecutar pytest en la terminal
+                # Si estás en Windows, a veces es mejor usar shell=True
+                # Asegúrate de que pytest esté instalado en tu entorno virtual
+                result = subprocess.run(['pytest', 'tests/test_datos.py'], capture_output=True, text=True, check=True)
+                print(result.stdout)
+                if result.stderr:
+                    print("Errores durante las pruebas:")
+                    print(result.stderr)
+            except subprocess.CalledProcessError as e:
+                print(f"Las pruebas fallaron con el código de salida {e.returncode}")
+                print(e.stdout)
+                if e.stderr:
+                    print("Errores durante las pruebas:")
+                    print(e.stderr)
+            except FileNotFoundError:
+                print("Error: 'pytest' no encontrado. Asegúrate de que pytest esté instalado y en tu PATH.")
+            print("Pruebas unitarias finalizadas.\n")
         elif opcion == '0':
             break
         else:

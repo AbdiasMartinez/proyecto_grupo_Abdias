@@ -14,12 +14,23 @@ El dataset contiene información sobre los conjuntos de datos que las entidades 
 - RESPONSABLE DE PUBLICACION: Persona o área encargada dentro de la entidad.
 - URL DE ACCESO: Enlace directo al dataset publicado.
 
+## PRUEBAS UNITARIAS
+
+El proyecto incluye "pruebas" para asegurar que las funciones más importantes del código trabajan correctamente.
+
+## PARA EJECUTAR LAS PRUEBAS
+
+- Es importante que el ambiente virtual esté activo.
+- Desde la carpeta principal del proyecto, simplemente escriba en la terminal **pytest**. O a través del programa con la opción 7 del menú.
+- El sistema mostrará si las pruebas fueron exitosas o si se encontró algún inconveniente.
+
 ## TECNOLOGIAS UTILIZADAS
 
-| Herramienta      | Descripción                                                                                |
-|------------------|--------------------------------------------------------------------------------------------|
-| Python           | Lenguaje de programación principal.                                                        |
-| Flask            | Framework web ligero para construir la aplicación.                                         |
-| Flask-SQLAlchemy | Extensión de Flask para interactuar con bases de datos relacionales (SQLite en este caso). |
-| Requests         | Librería de Python para realizar solicitudes HTTP a la API.                                |
-| SQLite           | Base de datos local para almacenar los datos importados.                                   |
+| Herramienta      | Descripción                                                                         |
+|------------------|-------------------------------------------------------------------------------------|
+| Python           | Es el lenguaje principal con el que construimos todo el proyecto.                   |
+| Flask            | Una herramienta ligera para hacer que el programa funcione como una aplicación.     |
+| Flask-SQLAlchemy | Nos ayuda a conectar Python con la base de datos (SQLite).                          |
+| Requests         | Nos permite pedir y recibir datos de la API de internet.                            |
+| SQLite           | Es nuestra pequeña base de datos que guarda la información en un archivo local.     |
+| Pytest           | Una herramienta para verificar que todo el código funciona correctamente (pruebas). |
