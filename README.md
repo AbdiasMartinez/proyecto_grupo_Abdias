@@ -103,7 +103,7 @@ Para añadir manualmente un nuevo registro a la base de datos, seleccione la opc
 Si necesita modificar la información de un registro ya existente, seleccione la opción `3`. Deberá proporcionar el ID del dato a actualizar y luego los nuevos valores para la entidad, el tema y la fecha.
 
 **Captura de pantalla de actualizar dato:**
-![Captura de pantalla de actualizar dato](img/Actualizar dato.png)
+![Image](https://github.com/user-attachments/assets/7cb11922-42b1-44ce-ae71-8f554614be94)
 
 **Eliminar un dato:**
 Para remover un registro de la base de datos, seleccione la opción `4`. Se le solicitará el ID del dato que desea eliminar.
