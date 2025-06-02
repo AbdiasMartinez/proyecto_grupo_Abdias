@@ -53,12 +53,12 @@ Sigue estos pasos para poner el proyecto a funcionar:
 2.  **Asegúrese de tener Python** (versión 3.x) instalado.
 3.  **Cree un "ambiente virtual"** (como un espacio de trabajo aislado para el proyecto). Esto es bueno para que no haya conflictos con otros proyectos:
     python -m venv .venv
-    # Luego, actívelo:
-    # Si está en Windows (CMD):
+    **Luego, actívelo:**<br>
+    **Si está en Windows (CMD):**<br>
     .venv\Scripts\activate.bat
-    # Si está en Windows (PowerShell):
+    **Si está en Windows (PowerShell):**<br>
     .venv\Scripts\Activate.ps1
-    # Si está en Mac/Linux:
+    **Si está en Mac/Linux:**<br>
     source .venv/bin/activate
 4.  **Instale las herramientas que necesita el proyecto:**
     pip install -r requirements.txt
