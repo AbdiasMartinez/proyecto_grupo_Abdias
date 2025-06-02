@@ -55,16 +55,16 @@ Sigue estos pasos para poner el proyecto a funcionar:
     python -m venv .venv
     **Luego, actívelo:**<br>
     **Si está en Windows (CMD):**<br>
-    .venv\Scripts\activate.bat
+    .venv\Scripts\activate.bat<br>
     **Si está en Windows (PowerShell):**<br>
-    .venv\Scripts\Activate.ps1
+    .venv\Scripts\Activate.ps1<br>
     **Si está en Mac/Linux:**<br>
     source .venv/bin/activate
-4.  **Instale las herramientas que necesita el proyecto:**
-    pip install -r requirements.txt
+4.  **Instale las herramientas que necesita el proyecto:**<br>
+    pip install -r requirements.txt<br>
     *(Asegúrese de que el archivo `requirements.txt` esté en la misma carpeta raíz del proyecto y contenga todas las dependencias necesarias, como Flask, Flask-SQLAlchemy, requests y pytest.)*
-5.  **Ahora, inicie la aplicación:**
-    python run.py
+5.  **Ahora, inicie la aplicación:**<br>
+    python run.py<br>
     Se presentará un menú en la terminal para que use el programa.
 
 ## Ejemplos de Uso
