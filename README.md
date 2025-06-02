@@ -3,10 +3,10 @@
 ¡Bienvenido a este proyecto! Aquí te explicamos de qué trata.
 
 ## ¿De qué se trata este proyecto? 
-**Objetivo Principal**
+**Objetivo Principal**<br>
 Este proyecto es una aplicación que te ayuda a **entender cuántas veces y qué tipo de datos publican las entidades del gobierno colombiano**. Usamos una fuente de datos oficial de Colombia (una API de datos abiertos).
 
-Nuestro objetivo es:
+Nuestro objetivo es:<br>
 * **Importar y guardar** esos datos de publicaciones.
 * **Contar cuántas veces publica cada entidad** para ver quién es más activa.
 * **Encontrar patrones generales** en cómo se publican los datos.
@@ -93,28 +93,28 @@ Para visualizar los registros actualmente guardados en la base de datos local, s
 **Captura de pantalla de la lista de datos:**<br>
 ![Image](https://github.com/user-attachments/assets/b607c1bb-70da-40dc-b857-fce9c95e292c)
 
-**Agregar un nuevo dato:**
+**Agregar un nuevo dato:**<br>
 Para añadir manualmente un nuevo registro a la base de datos, seleccione la opción `2`. Se le pedirá que ingrese la entidad, el tema y la fecha de actualización.
 
-**Captura de pantalla de agregar dato:**
+**Captura de pantalla de agregar dato:**<br>
 ![Image](https://github.com/user-attachments/assets/19ae8390-ed36-49a2-ac72-f43498b72050)
 
-**Actualizar un dato existente:**
+**Actualizar un dato existente:**<br>
 Si necesita modificar la información de un registro ya existente, seleccione la opción `3`. Deberá proporcionar el ID del dato a actualizar y luego los nuevos valores para la entidad, el tema y la fecha.
 
 **Captura de pantalla de actualizar dato:**<br>
 ![Image](https://github.com/user-attachments/assets/7cb11922-42b1-44ce-ae71-8f554614be94)
 
-**Eliminar un dato:**
+**Eliminar un dato:**<br>
 Para remover un registro de la base de datos, seleccione la opción `4`. Se le solicitará el ID del dato que desea eliminar.
 
-**Captura de pantalla de eliminar dato:**
+**Captura de pantalla de eliminar dato:**<br>
 ![Image](https://github.com/user-attachments/assets/514fdf78-d197-4770-887f-f2eeb86a1ca2)
 
-**Calcular Frecuencia de Entidades:**
+**Calcular Frecuencia de Entidades:**<br>
 Si desea conocer cuántas publicaciones ha realizado cada entidad, seleccione la opción `6`.
 
-**Captura de pantalla de la frecuencia de entidades:**
+**Captura de pantalla de la frecuencia de entidades:**<br>
 ![Image](https://github.com/user-attachments/assets/6edc3414-22b6-455f-bca6-02185682e858)
 
 ## ¿Cómo sé que todo funciona? (Pruebas Unitarias)
@@ -123,19 +123,19 @@ El proyecto incluye "pruebas" para asegurar que las funciones más importantes d
 ### 1. Ejecución Directa mediante Pytest (Recomendado para desarrollo)
 Esta es la forma estándar de ejecutar las pruebas unitarias directamente desde la terminal, ideal para desarrolladores.
 
-**Para ejecutar estas pruebas:**
+**Para ejecutar estas pruebas:**<br>
 1.  Es importante que el ambiente virtual esté activo.
 2.  Desde la carpeta principal del proyecto, simplemente escriba en la terminal:
     .venv\Scripts\python.exe -m pytest
     El sistema mostrará si las pruebas fueron exitosas o si se encontró algún inconveniente.
 
-**Captura de pantalla de las pruebas unitarias directas:**
+**Captura de pantalla de las pruebas unitarias directas:**<br>
 ![Image](https://github.com/user-attachments/assets/e8449bb4-8f56-455a-90eb-d0a45b3b8a7d)
 
 ### 2. Ejecución de Pruebas a través del Menú de la Aplicación
 Hemos incluido una opción en el menú principal de la aplicación (`run.py`) para ejecutar las pruebas unitarias. Esto permite una verificación rápida de la funcionalidad sin salir de la interfaz del programa.
 
-**Para ejecutar las pruebas desde el menú:**
+**Para ejecutar las pruebas desde el menú:**<br>
 1.  Inicie la aplicación ejecutando `python run.py`.
 2.  Una vez en el menú principal, seleccione la opción `7`.
     Menú:
@@ -146,5 +146,5 @@ Hemos incluido una opción en el menú principal de la aplicación (`run.py`) pa
     Seleccione una opción: 7
     El sistema mostrará la salida de Pytest directamente en la terminal, indicando si las pruebas fueron exitosas o si hubo algún error.
 
-**Captura de pantalla de las pruebas unitarias desde el menú:**
+**Captura de pantalla de las pruebas unitarias desde el menú:**<br>
 ![Image](https://github.com/user-attachments/assets/4d2a3071-9c40-4114-a5c1-a8cf6f0966d6)
