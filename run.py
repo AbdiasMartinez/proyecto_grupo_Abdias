@@ -1,6 +1,6 @@
 from app import app, db
 from app.controllers import datos_controller as controller
-import subprocess # Necesitamos esto para ejecutar comandos externos
+import subprocess
 
 with app.app_context():
     db.create_all()
@@ -9,12 +9,12 @@ with app.app_context():
     while True:
         print("\nMenú:")
         print("1. Listar datos locales")
-        print("2. Agregar dato")
-        print("3. Actualizar dato")
-        print("4. Eliminar dato")
+        print("2. Agregar entidad")
+        print("3. Actualizar entidad")
+        print("4. Eliminar entidad")
         print("5. Traer datos desde API")
         print("6. Mostrar frecuencia de publicación por entidad")
-        print("7. Ejecutar Pruebas Unitarias") # Nueva opción
+        print("7. Ejecutar Pruebas Unitarias")
         print("0. Salir")
 
         opcion = input("Seleccione una opción: ")
