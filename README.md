@@ -50,7 +50,9 @@ Cuando importamos los datos de la API, los guardamos en una base de datos más s
 Sigue estos pasos para poner el proyecto a funcionar:
 
 1.  **Abre la carpeta del proyecto** en tu computador.
+   
 2.  **Asegúrese de tener Python** (versión 3.x) instalado.
+   
 3.  **Cree un "ambiente virtual"** (como un espacio de trabajo aislado para el proyecto). Esto es bueno para que no haya conflictos con otros proyectos:
     python -m venv .venv
     **Luego, actívelo:**<br>
@@ -60,9 +62,11 @@ Sigue estos pasos para poner el proyecto a funcionar:
     .venv\Scripts\Activate.ps1<br>
     **Si está en Mac/Linux:**<br>
     source .venv/bin/activate
+    
 4.  **Instale las herramientas que necesita el proyecto:**<br>
     pip install -r requirements.txt<br>
     *(Asegúrese de que el archivo `requirements.txt` esté en la misma carpeta raíz del proyecto y contenga todas las dependencias necesarias, como Flask, Flask-SQLAlchemy, requests y pytest.)*
+    
 5.  **Ahora, inicie la aplicación:**<br>
     python run.py<br>
     Se presentará un menú en la terminal para que use el programa.
