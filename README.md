@@ -81,41 +81,41 @@ Menú
 
 A continuación, algunos ejemplos de interacción con el sistema:
 
-**Importar datos de la API:**
+**Importar datos de la API:**<br>
 Para cargar información de las publicaciones desde la API de Datos Abiertos de Colombia, seleccione la opción `5`. La aplicación contactará la API e importará los registros.
 
-**Aquí va tu captura de pantalla de la importación de datos:**
-![Captura de pantalla de la importación de datos](img/Importar datos.png)
+**Aquí va tu captura de pantalla de la importación de datos:**<br>
+![Image](https://github.com/user-attachments/assets/9b387eb0-1d8d-4275-8c1d-64c6fc18f637)
 
-**Listar todos los datos:**
+**Listar todos los datos:**<br>
 Para visualizar los registros actualmente guardados en la base de datos local, seleccione la opción `1`.
 
-**Captura de pantalla de la lista de datos:**
-![Captura de pantalla de la lista de datos](img/Listar datos.png)
+**Captura de pantalla de la lista de datos:**<br>
+![Image](https://github.com/user-attachments/assets/b607c1bb-70da-40dc-b857-fce9c95e292c)
 
 **Agregar un nuevo dato:**
 Para añadir manualmente un nuevo registro a la base de datos, seleccione la opción `2`. Se le pedirá que ingrese la entidad, el tema y la fecha de actualización.
 
 **Captura de pantalla de agregar dato:**
-![Captura de pantalla de agregar dato](img/Agregar dato.png)
+![Image](https://github.com/user-attachments/assets/19ae8390-ed36-49a2-ac72-f43498b72050)
 
 **Actualizar un dato existente:**
 Si necesita modificar la información de un registro ya existente, seleccione la opción `3`. Deberá proporcionar el ID del dato a actualizar y luego los nuevos valores para la entidad, el tema y la fecha.
 
-**Captura de pantalla de actualizar dato:**
+**Captura de pantalla de actualizar dato:**<br>
 ![Image](https://github.com/user-attachments/assets/7cb11922-42b1-44ce-ae71-8f554614be94)
 
 **Eliminar un dato:**
 Para remover un registro de la base de datos, seleccione la opción `4`. Se le solicitará el ID del dato que desea eliminar.
 
 **Captura de pantalla de eliminar dato:**
-![Captura de pantalla de eliminar dato](img/Eliminar dato.png)
+![Image](https://github.com/user-attachments/assets/514fdf78-d197-4770-887f-f2eeb86a1ca2)
 
 **Calcular Frecuencia de Entidades:**
 Si desea conocer cuántas publicaciones ha realizado cada entidad, seleccione la opción `6`.
 
 **Captura de pantalla de la frecuencia de entidades:**
-![Captura de pantalla de la frecuencia de entidades](img/frecuencia de publicación por entidad.png)
+![Image](https://github.com/user-attachments/assets/6edc3414-22b6-455f-bca6-02185682e858)
 
 ## ¿Cómo sé que todo funciona? (Pruebas Unitarias)
 El proyecto incluye "pruebas" para asegurar que las funciones más importantes del código trabajan correctamente. Se pueden ejecutar de dos maneras:
@@ -130,7 +130,7 @@ Esta es la forma estándar de ejecutar las pruebas unitarias directamente desde 
     El sistema mostrará si las pruebas fueron exitosas o si se encontró algún inconveniente.
 
 **Captura de pantalla de las pruebas unitarias directas:**
-![Captura de pantalla de las pruebas unitarias directas](img/Prueba pytest.png)
+![Image](https://github.com/user-attachments/assets/e8449bb4-8f56-455a-90eb-d0a45b3b8a7d)
 
 ### 2. Ejecución de Pruebas a través del Menú de la Aplicación
 Hemos incluido una opción en el menú principal de la aplicación (`run.py`) para ejecutar las pruebas unitarias. Esto permite una verificación rápida de la funcionalidad sin salir de la interfaz del programa.
@@ -147,4 +147,4 @@ Hemos incluido una opción en el menú principal de la aplicación (`run.py`) pa
     El sistema mostrará la salida de Pytest directamente en la terminal, indicando si las pruebas fueron exitosas o si hubo algún error.
 
 **Captura de pantalla de las pruebas unitarias desde el menú:**
-![Captura de pantalla de las pruebas unitarias desde el menú](img/Prueba menu.png)
+![Image](https://github.com/user-attachments/assets/4d2a3071-9c40-4114-a5c1-a8cf6f0966d6)
