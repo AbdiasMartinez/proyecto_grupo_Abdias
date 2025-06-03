@@ -3,10 +3,10 @@
 ¡Bienvenido a este proyecto! Aquí te explicamos de qué trata.
 
 ## ¿De qué se trata este proyecto? 
-**Objetivo Principal**
+**Objetivo Principal**<br>
 Este proyecto es una aplicación que te ayuda a **entender cuántas veces y qué tipo de datos publican las entidades del gobierno colombiano**. Usamos una fuente de datos oficial de Colombia (una API de datos abiertos).
 
-Nuestro objetivo es:
+Nuestro objetivo es:<br>
 * **Importar y guardar** esos datos de publicaciones.
 * **Contar cuántas veces publica cada entidad** para ver quién es más activa.
 * **Encontrar patrones generales** en cómo se publican los datos.
@@ -50,21 +50,25 @@ Cuando importamos los datos de la API, los guardamos en una base de datos más s
 Sigue estos pasos para poner el proyecto a funcionar:
 
 1.  **Abre la carpeta del proyecto** en tu computador.
+   
 2.  **Asegúrese de tener Python** (versión 3.x) instalado.
+   
 3.  **Cree un "ambiente virtual"** (como un espacio de trabajo aislado para el proyecto). Esto es bueno para que no haya conflictos con otros proyectos:
     python -m venv .venv
-    # Luego, actívelo:
-    # Si está en Windows (CMD):
-    .venv\Scripts\activate.bat
-    # Si está en Windows (PowerShell):
-    .venv\Scripts\Activate.ps1
-    # Si está en Mac/Linux:
+    **Luego, actívelo:**<br>
+    **Si está en Windows (CMD):**<br>
+    .venv\Scripts\activate.bat<br>
+    **Si está en Windows (PowerShell):**<br>
+    .venv\Scripts\Activate.ps1<br>
+    **Si está en Mac/Linux:**<br>
     source .venv/bin/activate
-4.  **Instale las herramientas que necesita el proyecto:**
-    pip install -r requirements.txt
+    
+4.  **Instale las herramientas que necesita el proyecto:**<br>
+    pip install -r requirements.txt<br>
     *(Asegúrese de que el archivo `requirements.txt` esté en la misma carpeta raíz del proyecto y contenga todas las dependencias necesarias, como Flask, Flask-SQLAlchemy, requests y pytest.)*
-5.  **Ahora, inicie la aplicación:**
-    python run.py
+    
+5.  **Ahora, inicie la aplicación:**<br>
+    python run.py<br>
     Se presentará un menú en la terminal para que use el programa.
 
 ## Ejemplos de Uso
@@ -81,41 +85,41 @@ Menú
 
 A continuación, algunos ejemplos de interacción con el sistema:
 
-**Importar datos de la API:**
+**Importar datos de la API:**<br>
 Para cargar información de las publicaciones desde la API de Datos Abiertos de Colombia, seleccione la opción `5`. La aplicación contactará la API e importará los registros.
 
-**Aquí va tu captura de pantalla de la importación de datos:**
-![Captura de pantalla de la importación de datos](img/Importar datos.png)
+**Aquí va tu captura de pantalla de la importación de datos:**<br>
+![Image](https://github.com/user-attachments/assets/9b387eb0-1d8d-4275-8c1d-64c6fc18f637)
 
-**Listar todos los datos:**
+**Listar todos los datos:**<br>
 Para visualizar los registros actualmente guardados en la base de datos local, seleccione la opción `1`.
 
-**Captura de pantalla de la lista de datos:**
-![Captura de pantalla de la lista de datos](img/Listar datos.png)
+**Captura de pantalla de la lista de datos:**<br>
+![Image](https://github.com/user-attachments/assets/b607c1bb-70da-40dc-b857-fce9c95e292c)
 
-**Agregar un nuevo dato:**
+**Agregar un nuevo dato:**<br>
 Para añadir manualmente un nuevo registro a la base de datos, seleccione la opción `2`. Se le pedirá que ingrese la entidad, el tema y la fecha de actualización.
 
-**Captura de pantalla de agregar dato:**
-![Captura de pantalla de agregar dato](img/Agregar dato.png)
+**Captura de pantalla de agregar dato:**<br>
+![Image](https://github.com/user-attachments/assets/19ae8390-ed36-49a2-ac72-f43498b72050)
 
-**Actualizar un dato existente:**
+**Actualizar un dato existente:**<br>
 Si necesita modificar la información de un registro ya existente, seleccione la opción `3`. Deberá proporcionar el ID del dato a actualizar y luego los nuevos valores para la entidad, el tema y la fecha.
 
-**Captura de pantalla de actualizar dato:**
-![Captura de pantalla de actualizar dato](img/Actualizar dato.png)
+**Captura de pantalla de actualizar dato:**<br>
+![Image](https://github.com/user-attachments/assets/7cb11922-42b1-44ce-ae71-8f554614be94)
 
-**Eliminar un dato:**
+**Eliminar un dato:**<br>
 Para remover un registro de la base de datos, seleccione la opción `4`. Se le solicitará el ID del dato que desea eliminar.
 
-**Captura de pantalla de eliminar dato:**
-![Captura de pantalla de eliminar dato](img/Eliminar dato.png)
+**Captura de pantalla de eliminar dato:**<br>
+![Image](https://github.com/user-attachments/assets/514fdf78-d197-4770-887f-f2eeb86a1ca2)
 
-**Calcular Frecuencia de Entidades:**
+**Calcular Frecuencia de Entidades:**<br>
 Si desea conocer cuántas publicaciones ha realizado cada entidad, seleccione la opción `6`.
 
-**Captura de pantalla de la frecuencia de entidades:**
-![Captura de pantalla de la frecuencia de entidades](img/frecuencia de publicación por entidad.png)
+**Captura de pantalla de la frecuencia de entidades:**<br>
+![Image](https://github.com/user-attachments/assets/6edc3414-22b6-455f-bca6-02185682e858)
 
 ## ¿Cómo sé que todo funciona? (Pruebas Unitarias)
 El proyecto incluye "pruebas" para asegurar que las funciones más importantes del código trabajan correctamente. Se pueden ejecutar de dos maneras:
@@ -123,19 +127,19 @@ El proyecto incluye "pruebas" para asegurar que las funciones más importantes d
 ### 1. Ejecución Directa mediante Pytest (Recomendado para desarrollo)
 Esta es la forma estándar de ejecutar las pruebas unitarias directamente desde la terminal, ideal para desarrolladores.
 
-**Para ejecutar estas pruebas:**
+**Para ejecutar estas pruebas:**<br>
 1.  Es importante que el ambiente virtual esté activo.
 2.  Desde la carpeta principal del proyecto, simplemente escriba en la terminal:
     .venv\Scripts\python.exe -m pytest
     El sistema mostrará si las pruebas fueron exitosas o si se encontró algún inconveniente.
 
-**Captura de pantalla de las pruebas unitarias directas:**
-![Captura de pantalla de las pruebas unitarias directas](img/Prueba pytest.png)
+**Captura de pantalla de las pruebas unitarias directas:**<br>
+![Image](https://github.com/user-attachments/assets/e8449bb4-8f56-455a-90eb-d0a45b3b8a7d)
 
 ### 2. Ejecución de Pruebas a través del Menú de la Aplicación
 Hemos incluido una opción en el menú principal de la aplicación (`run.py`) para ejecutar las pruebas unitarias. Esto permite una verificación rápida de la funcionalidad sin salir de la interfaz del programa.
 
-**Para ejecutar las pruebas desde el menú:**
+**Para ejecutar las pruebas desde el menú:**<br>
 1.  Inicie la aplicación ejecutando `python run.py`.
 2.  Una vez en el menú principal, seleccione la opción `7`.
     Menú:
@@ -146,5 +150,8 @@ Hemos incluido una opción en el menú principal de la aplicación (`run.py`) pa
     Seleccione una opción: 7
     El sistema mostrará la salida de Pytest directamente en la terminal, indicando si las pruebas fueron exitosas o si hubo algún error.
 
-**Captura de pantalla de las pruebas unitarias desde el menú:**
-![Captura de pantalla de las pruebas unitarias desde el menú](img/Prueba menu.png)
+**Captura de pantalla de las pruebas unitarias desde el menú:**<br>
+![Image](https://github.com/user-attachments/assets/4d2a3071-9c40-4114-a5c1-a8cf6f0966d6)
+
+## Link del video explicativo
+https://youtu.be/axM5-9-kHLU
